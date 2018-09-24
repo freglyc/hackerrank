@@ -13,6 +13,8 @@ def maxSubsetSum(arr):
     '''
     Input: arr -> list
     Output: -> int
+
+    Recurrence: OPT(j) = max(a_j + OPT(j-2), OPT(j-1))
     '''
     M = {}
     M[-1] = 0

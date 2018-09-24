@@ -14,9 +14,9 @@ def abbreviation(a, b):
     Input: a -> str, b -> str
     output: 'YES', 'NO'
 
-    DP solution:
+    Recurrence: OPT(a) = False if a != b, True if a = b, OPT(1st lower to upper in a) || OPT(1st lower removed in a)
 
-    M stores the different str values in a dict that represents a tree
+    Design Note: M stores the different str values in a dict that represents a tree
     s.t. the root is at i, left child at 2i+1, right child at 2i+2
     '''
     M = {}
